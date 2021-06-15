@@ -1,4 +1,4 @@
-# Fine-Tuning-BERT-Model-on-A-Custom-Dataset
+# Fine Tuning a pre-trained BERT Model on a Custom Dataset
 
 # Introduction
 Bidirectional Encoder Representations from Transformers or commonly known as BERT is a transformer based model that is used in Natural Language Processing for performing Semi-Supervised and Supervised Learning tasks. The BERT model is different from Transformers in such that it is made up of a stacked layer of Encoders. In this project, we will be looking at Supervised Learning where the a pre-trained BERT model is fine tuned on a movie reviews dataset that was downloaded from Kaggle.
@@ -12,7 +12,8 @@ In BERT, word embeddings are done using ELMO which provides embedding based on t
 - Data was downloaded from Kaggle.
 - The Huggingface Transformer library is installed.
 - Separating the data into train and test sets.
-- Next up, tokenize all the sentences.
+- Next up, tokenize all the sentences using DistilBertTokenizerFast.
+- Here we use DistilBert which is a small, fast and light Transformer model trained by distilling BERT base model.
 - Convert all of them to Tensors as we will be using TensorFlow library.
 - Train the model
 - The model showed quite a high accuracy despite being trained for a few epochs. It  can be  trained for even more epochs and earlystopping can also be added to stop overfitting.
